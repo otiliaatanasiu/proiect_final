@@ -1,9 +1,12 @@
 import Carousel from "react-bootstrap/Carousel";
 import { Row, Col } from "reactstrap";
+import "./HomeCarousel.style.css";
+
 
 function HomeCarousel() {
 	return (
-		<Carousel>
+	
+		<Carousel >
 
 			<Carousel.Item>
 				
@@ -138,6 +141,7 @@ function HomeCarousel() {
 				</Row>
 			</Carousel.Item>
 		</Carousel>
+	
 	);
 }
 

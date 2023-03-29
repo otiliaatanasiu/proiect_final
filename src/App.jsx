@@ -18,7 +18,7 @@ function App() {
 	
 		
 			<Routes>
-				<Route path='Homepage' element={<HomePage />} />
+				<Route path='HomePage' element={<HomePage />} />
 				<Route path='Product' element={<Product />} />
 				<Route path='WishList' element={<WishList />} />
 				<Route path='/*' element={<h1>Not Found!</h1>} />

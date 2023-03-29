@@ -1,7 +1,10 @@
 .category_list {
     width: 20vw;
+    border-radius:10px;
+    padding: 40px;
 }
 
 .product_list {
     width: 80vw;
+    margin-bottom: 100px;
 }

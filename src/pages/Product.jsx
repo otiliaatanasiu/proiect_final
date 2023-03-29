@@ -44,7 +44,7 @@ function Product() {
 								</Badge>
 							);
 						})}
-						<Button
+						<Button className='d-flex align-self-center mt-2'
 							color='danger'
 							size='sm'
 							onClick={() => {

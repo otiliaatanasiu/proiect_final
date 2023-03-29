@@ -1,10 +1,14 @@
-.footer_content {
-    position: fixed;
-    background-color: #00698d;
-    color:#fff;
-    bottom: 0;
-    left: 0px;
-    right: 0;
-    padding: 20px;
-    text-align: center;
+.text {
+    width: 100%;
+	text-align: center;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row-reverse;
+justify-content: flex-start;
+    align-items: center;
+	text-align: right;
+
+    
 }

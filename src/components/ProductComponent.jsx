@@ -9,6 +9,7 @@ import {
 	CardSubtitle,
 	CardImg,
 } from "reactstrap";
+import "./ProductComponent.style.css";
 
 function ProductComponent({ product }) {
 	// function to add a product to the local storage as favourite
@@ -40,7 +41,7 @@ function ProductComponent({ product }) {
 
 	return (
 		<Col className='mt-4'>
-		<Card className='d-flex justify-content-between align-items-center' >
+		<Card className='d-flex justify-content-between h-100' >
 			<img
 			    top width='100%'
 				alt='Sample'
@@ -50,10 +51,10 @@ function ProductComponent({ product }) {
 			/>
 			<CardBody>
 				<CardTitle tag='h5'>{product.title}</CardTitle>
-				<CardText className='text-muted'>{product.description}</CardText>
+				<CardText className='text-muted text-truncate-3'>{product.description}</CardText>
 				<h4>{product.userId}</h4>
 			</CardBody>
-			<CardFooter className='button' variant="primary" >
+			<CardFooter className='button d-flex justify-content-between align-items-center' variant="primary" >
 				<p className='m-0'>{product.price}</p>
 				<Button
 					onClick={() => {
@@ -69,16 +70,3 @@ function ProductComponent({ product }) {
 
 export default ProductComponent; // export the component for use in other parts of the application
 
-{/* <Card className='d-flex justify-content-between align-items-center'>
-  <CardImg top width='100%' src={product.image} alt={product.name} />
-  <CardBody>
-    <CardTitle tag='h5'>{product.name}</CardTitle>
-    <CardSubtitle>{product.category}</CardSubtitle>
-    <CardText>{product.description}</CardText>
-    <Button onClick={() => addToCart()}>Add to cart</Button>
-  </CardBody>
-  <CardFooter className='button d-flex justify-content-between'>
-    <p className='m-0'>{product.price}</p>
-    <Button onClick={() => addToWishlist()}>Add to favourite!</Button>
-  </CardFooter>
-</Card> */}
