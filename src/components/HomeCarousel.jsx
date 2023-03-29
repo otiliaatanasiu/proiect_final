@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import { Row, Col } from "reactstrap";
-import "./HomeCarousel.style.css";
+
 
 
 function HomeCarousel() {
